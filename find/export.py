@@ -58,14 +58,17 @@ def clear_all():
 #**************************************************************
 def select_attribute(var1, var2):
     """SelectByAttribute with split by space to select multiply CLU"""
-    sp_var2 = var2.split()
-    for var0 in sp_var2:
-        arcpy.management.SelectLayerByAttribute(
-        in_layer_or_view="CLU",
-        selection_type="ADD_TO_SELECTION",
-        where_clause=f"county_code = '{var1}' And tract_number = '{var0}'",
-    )
-#**************************************************************
+    try:
+        sp_var2 = var2.split()
+        for var0 in sp_var2:
+            arcpy.management.SelectLayerByAttribute(
+            in_layer_or_view="CLU",
+            selection_type="ADD_TO_SELECTION",
+            where_clause=f"county_code = '{var1}' And tract_number = '{var0}'",
+        )
+    except Exception as e:
+        print(f"Error setting extent: {e}")
+    #********************************
 def zoom_to_feature(the_feature):
     """Zoom in on a specific feature in ArcMap.:param the_feature: Name of the layer or feature class to zoom in on. """
     aprx = arcpy.mp.ArcGISProject("CURRENT")
@@ -90,8 +93,6 @@ def export_select(the_path):
         )
     except Exception as e:
         print(f"An error occurred: {str(e)}")
-
-
 # funtions calls**************************************************************
 cty_zip, cty_name = sort_list(cty_list, cty_input) 
 clear_all()  
