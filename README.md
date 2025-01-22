@@ -1,2 +1,2 @@
-# NRCS_CLU_Find
- Tool for ArcGIS to help find Common Land Units (CLU)
+# NRCS GIS Tools
+ Tools for ArcGIS to help workflow for NRCS non GIS staff
