@@ -1,7 +1,8 @@
-# How to use Find tool
-## Objective: Simplfiy "select by abbribute" method  
-### Description: Tool finds multiply Conservation Land Unit (CLU) and gives you a choice to export it to a geodatabase.
-### Steps:
+# How to use the Find Tool
+
+## Description: Tool finds multiply Conservation Land Unit (CLU) and gives you a choice to export it to a geodatabase.
+
+### Steps
 
 1. Select county drop down
 2. Enter CLU tract numbers separated by space  example: 344 555 666
