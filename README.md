@@ -1,6 +1,14 @@
+<<<<<<< HEAD
 # NRCS Tool
 
 ![NRCS Tool Logo](https://github.com/user-attachments/assets/45f44848-e6dd-451a-a643-f5c6c0f92439)
+=======
+
+
+# NRCS Tool
+
+![image002](https://github.com/user-attachments/assets/45f44848-e6dd-451a-a643-f5c6c0f92439)
+>>>>>>> 1900ffae654315c15fb5a473c54fc4d83b87e3ce
 
 ## Introduction
 
