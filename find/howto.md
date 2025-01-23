@@ -1,11 +1,11 @@
 # How to use the Find Tool
 
-## Description: Tool finds multiply Conservation Land Unit (CLU) and gives you a choice to export it to a geodatabase.
+## "Find Tool" finds multiple Conservation Land Units (CLU) and gives you a choice to export it to a geodatabase
 
 ### Steps
 
-1. Select county drop down
-2. Enter CLU tract numbers separated by space  example: 344 555 666
+1. Select county drop-down
+2. Enter CLU tract numbers separated by space,  for example 344 555 666
 3. Leave export and path alone for now
 4. Press Run
 5. Check your selection if it is what you want
