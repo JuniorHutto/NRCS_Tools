@@ -1,7 +1,8 @@
 
 # NRCS Tool
 
-![NRCS Tool Logo](https://github.com/user-attachments/assets/45f44848-e6dd-451a-a643-f5c6c0f92439)
+
+<h1 align="left"><img src="https://github.com/user-attachments/assets/45f44848-e6dd-451a-a643-f5c6c0f92439"/></h1> 
 
 ## Introduction
 
@@ -9,6 +10,6 @@ Created for non-GIS NRCS staff to improve workflow.  NRCS staff has more importa
 
 ### How To use tools
 
-1. Download and unzip, move it to (eg. C:\\projects)
-2. Add toolbox to Arc project
+1. Download [How to](https://github.com/JuniorHutto/NRCS_Tools/wiki/Download-Repository)
+2. Add toolbox to Arc project [How to](https://github.com/JuniorHutto/NRCS_Tools/wiki/Add-Toolbox-to-ArcGIS-project)
 3. Enter parameters and run
