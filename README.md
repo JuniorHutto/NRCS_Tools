@@ -10,6 +10,6 @@ Created for non-GIS NRCS staff to improve workflow.  NRCS staff has more importa
 
 ### How To use tools
 
-1. Download and unzip  [Howto](https://github.com/JuniorHutto/NRCS_Tools/wiki/Download-Repository)
+1. Download and unzip  [How to](https://github.com/JuniorHutto/NRCS_Tools/wiki/Download-Repository)
 2. Add toolbox to Arc project
 3. Enter parameters and run
