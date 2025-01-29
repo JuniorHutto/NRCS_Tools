@@ -1,29 +1,29 @@
 """
-Frank Hutto
-This script check to see if ACRES field if not it create one and calucates area in acres
+Objective: Clip feature with boundary and calculate acres of each polygon.
+Frank Hutto 2025-01-27
 """
 import arcpy
-arcpy.ImportToolbox(r"@\Analysis Tools.tbx")
 
-input_feature =arcpy.GetParameterAsText(0)
-clip_feature = arcpy.GetParameterAsText(1)
-out_feature= arcpy.GetParameterAsText(2)
+input =arcpy.GetParameterAsText(0)
+boundary = arcpy.GetParameterAsText(1)
+out= arcpy.GetParameterAsText(2)
 
-def the_clip(input_feature,clip_feature,out_feature):
+def the_clip(input,boundary,out):
+    """Clips the input feature class by the boundary feature class"""
     arcpy.analysis.PairwiseClip(
-        in_features=input_feature,
-        clip_features=clip_feature,
-        out_feature_class=out_feature,
-        cluster_tolerance=None
+        in_features=input,
+        clip_features=boundary,
+        out_feature_class=out,
+        #cluster_tolerance=None
     )
     return
 
-def make_field(out_feature):
-    """checks if field is present if not creates FEET   field"""
-    fields =[field.name for field in arcpy.ListFields(out_feature)]
+def make_field(out):
+    """checks if field is present if not creates ARCE field"""
+    fields =[field.name for field in arcpy.ListFields(out)]
     if "ACRES" not in fields:
         arcpy.management.AddField(
-            in_table=input_feature,
+            in_table=out,
             field_name="ACRES",
             field_type="DOUBLE",
             field_precision=12,
@@ -35,10 +35,11 @@ def make_field(out_feature):
             field_domain=""
         )
     return
-def calc_geom(out_feature):
+
+def calc_geom(out):
     """Calculates the area of a feature in acres"""
     arcpy.management.CalculateGeometryAttributes(
-        in_features=out_feature,
+        in_features=out,
         geometry_property="ACRES AREA_GEODESIC",
         length_unit="",
         area_unit="ACRES_US",
@@ -47,6 +48,6 @@ def calc_geom(out_feature):
     )
     return
 
-the_clip(input_feature,clip_feature,out_feature)
-make_field(out_feature)
-calc_geom(out_feature)
+the_clip(input,boundary,out)
+make_field(out)
+calc_geom(out)
