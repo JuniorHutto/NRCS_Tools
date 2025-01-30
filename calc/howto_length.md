@@ -1,6 +1,6 @@
 # Calculate Geometry Tool (Length)
 
-## Objective: Create a tool that creates a Field [FEET] and calculate acres in each polyline.
+## Objective: Create a tool that creates a Field [FEET] and calculate acres in each polyline
 
 ### Steps
 

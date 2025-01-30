@@ -1,6 +1,6 @@
 # NRCS Clip and Calcuation tool
 
-## Objective: Clip feature with boundary and calculate acres of each polygon.
+## Objective: Clip feature with boundary and calculate acres of each polygon
 
 ### Steps
 
