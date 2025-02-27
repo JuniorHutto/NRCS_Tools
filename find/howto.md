@@ -11,8 +11,10 @@
 5. Check your selection if it is what you want
 6. Check export button
 7. Click on folder icon and find geodatabase you want export selected feature
-8. Press Run
+8. Press "Run"
 ## "TRS" finds Township Range Section
 ### Steps
-1. Enter township range section contuious (example township 70 range 21 section 3 > 70213 )
-2. Press Run
+1. Enter township range section contuious string
+2. Township 70 range 21 section 3 > 70213
+3. Press "Run"
+
