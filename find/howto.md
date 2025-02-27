@@ -14,7 +14,6 @@
 8. Press "Run"
 ## "TRS" finds Township Range Section
 ### Steps
-1. Enter township range section contuious string
-2. Township 70 range 21 section 3 > 70213
+1. Enter township range section contuious string eg. township 70 range 21 section 3 > 70213
 3. Press "Run"
 
